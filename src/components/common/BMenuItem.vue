@@ -26,11 +26,6 @@ export default {
 			type: Object,
             required: true,
             href: String,
-            num: String,
-            tltle: String,
-            home: String,
-            sequare: String,
-            live: String
 		}
 	},
 	computed: {

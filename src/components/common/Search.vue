@@ -1,123 +1,95 @@
 <template>
-	<li class="m-i" :class="classes">
-		<a class="i-link" :href="item.href" target="_blank">
-			<em>{{item.title}}</em>
-			<div class="v-num" v-if="showNum">
-				<span class="addnew_1">{{item.num}}</span>
-			</div>
-		</a>
-		<ul></ul>
-	</li>
+  <div class="search">
+    <form action="//search.bilibili.com/all" id="searchform">
+      <input
+        name="keyword"
+        type="text"
+        class="search-keyword"
+        id="search-keyword"
+        autocomplete="off"
+        accesskey="s"
+        x-webkit-speech
+        x-webkit-grammar="builtin:translate"
+        placeholder="这样的历史剧才靠谱！"
+        data-recommend="av8509845"
+      />
+      <button type="submit" class="search-submit"></button>
+    </form>
+    <a class="link-ranking" href="//www.bilibili.com/ranking" target="_blank">
+      <span>排行榜</span>
+    </a>
+  </div>
 </template>
-
 <script>
-export default {
-	data() {
-		return {
-			classes: {
-				home: this.item.home,
-				sequare: this.item.sequare,
-                live: this.item.live
-			}
-		}
-	},
-	props: {
-		item: {
-			type: Object,
-			required: true,
-            href: String,
-            num: String,
-            tltle: String,
-            home: String,
-            sequare: String,
-            live: String
-		}
-	},
-	computed: {
-		showNum() {
-			if (this.item.home || this.item.sequare || this.item.live) {
-				return false
-			}
-			return true
-		}
-	}
-}
+export default {};
 </script>
 
-<style lang="stylus">
-	.m-i
-		float left
-		position relative
-		font-size  14px
-		display block
-		height 50px	
-		&.home
-			padding 0 12px 0 0
-			width auto
-			margin 0
-			a.i-link
-				padding 0
-				background url(../../assets/images/icons.png) -658px -1170px no-repeat
-				em
-					padding-left 0
-					padding-right 0
-					margin 0
-		&.sequare
-			margin 0 12px 0 14px
-			em
-				padding-left 22px
-				padding-right 0
-				padding-top 0
-				height 50px
-				margin 0!important
-				font-size 16px
-				background url(../../assets/images/icons.png) -664px -518px no-repeat
-		&.live
-			margin-left 16px
-			em
-				padding-left 22px
-				padding-right 0
-				padding-top 0
-				height 50px
-				margin 0!important
-				font-size 16px
-				background url(../../assets/images/icons.png) -664px -904px no-repeat
-		a
-			color #222
-			display block
-			&.i-link
-				position relative
-				z-index 10
-				font-size 14px
-			em
-				line-height 50px
-				font-style normal
-				font-weight normal
-				display inline-block
-				vertical-align middle
-				margin 0 11px
-				height 42px
-				padding-top 8px
-		.v-num
-			position absolute
-			top 8px
-			left 0px
-			height 14px
-			width 100%
-			text-align center
-			span
-				position static
-				display inline-block
-				vertical-align top
-				top auto
-				margin-left 0
-				background-color #ffafc9
-				color #fff
-				border-radius 4px
-				height 12px
-				text-align center
-				font-family Calibri,Arial,Helvetica,sans-serifsans-serif
-				font-size 11px
-				min-width 18px
-				padding 1px 3px
+<style lang="stylus" scoped>
+.search {
+  z-index: 100;
+  position: absolute;
+  top: calc(170px - (56px - 32px) - 32px);
+  right: 0;
+  width: 268px;
+  height: 32px;
+  padding: 2px 2px 2px 72px;
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+
+  #searchform {
+    background-color: rgba(255, 255, 255, 0.88);
+    display: block;
+    height: 32px;
+    border-radius: 4px;
+    transition: 0.2s background-color;
+    margin-top: 0em;
+
+    .search-keyword {
+      float: left;
+      width: 200px;
+      color: #222;
+      font-size: 12px;
+      overflow: hidden;
+      height: 32px;
+      line-height: 32px;
+      padding: 0 12px;
+      border: 0;
+      box-shadow: none;
+      background-color: transparent;
+      outline: 0;
+    }
+
+    .search-submit {
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 48px;
+      cursor: pointer;
+      height: 32px;
+      background: url('../../assets/images/icons.png') -653px -720px;
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  .link-ranking {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    height: 32px;
+    line-height: 32px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    width: 68px;
+    transition: 0.2s background-color;
+
+    span {
+      padding-left: 26px;
+      color: #f25d8e;
+      display: inline-block;
+      background: url('../../assets/images/icons.png') -659px -655px no-repeat;
+    }
+  }
+}
 </style>
