@@ -4,7 +4,7 @@ import banner from './banner'
 // import extra from './extra'
 // import live from './live'
 // import promote from './promote'
-// import rank from './rank'
+import rank from './rank'
 
 const router = Router()
 
@@ -14,7 +14,7 @@ router.use(banner.routes(), banner.allowedMethods())
 // router.use(extra.routes(), extra.allowedMethods())
 // router.use(live.routes(), live.allowedMethods())
 // router.use(promote.routes(), promote.allowedMethods())
-// router.use(rank.routes(), rank.allowedMethods())
+router.use(rank.routes(), rank.allowedMethods())
 
 
 export default router

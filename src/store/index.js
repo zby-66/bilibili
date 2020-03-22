@@ -16,8 +16,8 @@ const state = {
 }
 
 const getters = {
-	requesting: state => state.requesting,
-	error: state => state.error
+	requesting: state => state.requesting, //请求
+	error: state => state.error //错误
 }
 
 export default new Vuex.Store({

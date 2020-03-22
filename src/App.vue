@@ -24,7 +24,7 @@ export default {
     // BNavSide
   },
   mounted() {
-    // this.$store.dispatch('getContentRows')
+    this.$store.dispatch('getContentRows')
   },
   data() {
     return {
