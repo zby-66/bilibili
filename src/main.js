@@ -2,6 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import VueLazyload from 'vue-lazyload'
+import VueMeta from 'vue-meta'
+Vue.use(VueMeta)
+Vue.use(VueLazyload)
 import '../static/css/reset.css';
 
 Vue.config.productionTip = false

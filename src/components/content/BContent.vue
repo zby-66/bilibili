@@ -11,28 +11,28 @@
       </div>
     </div>
     <!-- 推广 -->
-    <!-- <div class="container-row">
+    <div class="container-row">
 			<BPromote></BPromote>
-    </div>-->
+    </div>
     <!-- 直播 -->
-    <!-- <div class="container-row">
+    <div class="container-row">
 			<BLive></BLive>
-    </div>-->
+    </div>
     <!-- 各分类具体内容 -->
-    <!-- <template v-if='rows'>
+    <template v-if='rows'>
 		<div class="container-row"  v-for="(row, index) in rows" :id="row.b_id" :key="index"> 
 			<BContentRow :category="row.category" :categoryId="row.categoryId" :row="row.item"></BContentRow>
 		</div>
-    </template>-->
+    </template>
   </div>
 </template>
 
 <script>
 import Banner from "../banner/Banner";
 import BContentTop from "../contentTop/BContentTop";
-// import BPromote from 'components/promote/BPromote'
-// import BLive from 'components/live/BLive'
-// import BContentRow from 'components/contentRow/BContentRow'
+import BPromote from '../promote/BPromote'
+import BLive from '../live/BLive'
+import BContentRow from '../contentRow/BContentRow'
 
 import { mapGetters } from "vuex";
 export default {
@@ -43,10 +43,10 @@ export default {
   },
   components: {
     Banner,
-    BContentTop
-    // BPromote,
-    // BLive,
-    // BContentRow
+    BContentTop,
+    BPromote,
+    BLive,
+    BContentRow
   }
 };
 </script>
