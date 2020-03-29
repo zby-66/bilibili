@@ -32,7 +32,7 @@
             <div class="mini-preview-wrapper">
               <div class="mini-preview-list-wrapper">
                 <ul class="mini-preview" ref="miniPreview">
-                  <li class="preview" v-for="pre in preview" :key="pre">
+                  <li class="preview" v-for="pre in preview" :key="pre.pic">
                     <a href target="_blank">
                       <img :src="pre.pic" />
                     </a>
@@ -45,7 +45,7 @@
                     class="info-item"
                     v-for="(pre, index) in preview"
                     :class="{ show: count == index,hide: count !== index }"
-                    :key="pre"
+                    :key="pre.title"
                   >
                     <a class="t" :href="pre.url" :title="pre.title" target="_blank">{{pre.title}}</a>
                   </div>
@@ -64,7 +64,7 @@
               </div>
             </div>
             <div class="live-pmt-live">
-              <li v-for="anchor in recommendAnchor" :key="anchor">
+              <li v-for="anchor in recommendAnchor" :key="anchor.uname">
                 <div class="pmt-item">
                   <a class="preview" :href="anchor.link" target="_blank" :title="anchor.title">
                     <img :src="anchor.face" :alt="anchor.link" />

@@ -3,7 +3,7 @@
   	<div class="header-layer"></div>
   	<a class="header-link" target="_blank" href="http://www.bilibili.com" data-loc-id="142"></a>
   	<div class="h-center">
-  		<a href="/" class="logo" style="background-image: url('//i0.hdslb.com/bfs/archive/bb2aa0d954bf59d4ee555a8a603fe83888463b6b.png');"></a>
+  		<a href="/" class="logo" style="background-image: url('//i0.hdslb.com/bfs/archive/bb2aa0d954bf59d4ee555a8a603fe83888463b6b.png');"></a><!--background-image: url("//i0.hdslb.com/bfs/archive/4de86ebf90b044bf9ba2becf042a8977062b3f99.png");-->
   		<div class="banner-title">哔哩哔哩 (゜-゜)つロ 干杯~</div>
       <search class="msearch"></search>
   	</div>

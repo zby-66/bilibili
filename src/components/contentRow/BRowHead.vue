@@ -240,7 +240,7 @@ export default {
   .b-link-more {
     float: right;
     text-align: center;
-    margin-left: 10px;
+    margin-right: -160px;
 
     a {
       display: block;
@@ -272,6 +272,7 @@ export default {
     border-radius: 4px;
     height: 22px;
     padding: 0 10px;
+    margin-right: -95px;
 
     .icon-refresh {
       background: url('../../assets/images/icons.png') -475px -89px no-repeat;

@@ -44,7 +44,7 @@ li
 	float left
 	width 160px
 	margin-bottom 20px
-	margin-right 20px
+	margin-right 15px
 	.v
 		position relative
 		width 160px

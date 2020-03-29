@@ -62,7 +62,7 @@ export default {
 <style lang="stylus" scoped>
 .item-li {
   float: left;
-  margin: 0 20px 20px 0;
+  margin: 0 15px 20px 0;
 
   .v {
     position: relative;

@@ -1,7 +1,7 @@
 <template>
 	<div class="b-body">
 		<ul class="vidbox v-list">
-			<BRowItem v-for="item in row" :item="item" :key="item"></BRowItem>
+			<BRowItem v-for="item in row" :item="item" :key="item.pic"></BRowItem>
 		</ul>
 	</div>
 </template>
@@ -22,7 +22,7 @@ export default {
 
 <style lang="stylus" scoped>
 	.b-body
-		margin-right -20px
+		margin-right -240px
 		clear both
 		.v-list
 			width 100%

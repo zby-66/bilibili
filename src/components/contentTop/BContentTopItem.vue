@@ -29,8 +29,9 @@ export default {
 <style lang="stylus" scoped>
 .top-item {
   float: left;
-  width: 180px;
+  width: 160px;
   margin-bottom: 20px;
+  margin-right: 13px;
 
   .v-item {
     width: 160px;
@@ -46,7 +47,7 @@ export default {
 
     img {
       height: 100%;
-      margin: 0 auto;
+      margin:  auto;
       display: block;
       width: 160px;
       opacity: 1;

@@ -66,7 +66,7 @@ export default {
   position: relative;
   height: 240px;
   overflow: hidden;
-  margin-left: 20px;
+  margin-left: -140px;
 
   .top-list {
     margin-right: -20px;

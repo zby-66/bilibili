@@ -3,7 +3,7 @@
     <TopContainer></TopContainer>
     <BHeader></BHeader>
     <BContent :rows="rows"></BContent>
-    <!-- <BNavSide :options="options" v-on:change="isShowMask"></BNavSide> -->
+    <BNavSide :options="options" v-on:change="isShowMask"></BNavSide>
     <div class="wnd-mask" ref="mask" v-show="showMask"></div>
   </div>
 </template>
@@ -12,7 +12,7 @@
 import TopContainer from './components/common/TopContainer.vue'
 import BHeader from './components/common/BHeader.vue'
 import BContent from './components/content/BContent.vue'
-// import BNavSide from 'components/nav/BNavSide'
+import BNavSide from './components/nav/BNavSide.vue'
 
 import { mapGetters } from 'vuex'
 export default {
@@ -45,7 +45,7 @@ export default {
     TopContainer,
     BHeader,
     BContent,
-    // BNavSide
+    BNavSide
   },
   mounted() {
     this.$store.dispatch('getContentRows')

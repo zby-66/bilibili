@@ -153,7 +153,7 @@ export default {
 
   .menu-wrapper {
     position: relative;
-    width: 1128px;
+    width: 1140px;
     margin: 0 auto;
     padding: 6px 0;
     z-index: 100;

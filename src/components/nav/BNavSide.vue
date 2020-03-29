@@ -7,7 +7,7 @@
       </div>
     </transition>
     <div class="nav-list" ref="list">
-      <template v-for="(item, index) in data">
+      <template v-for="(item, index) in data" >
         <div
           v-if="isDrag && index === replaceItem && replaceItem <= dragId"
           class="n-i sotrable"
@@ -343,7 +343,7 @@ export default {
   }
 
   .tip {
-    background: url('http://p1.bqimg.com/567571/f0b9b188ab580a2b.png') 0 0 no-repeat; // p1.bqimg.com/567571/f0b9b188ab580a2b.png) 0 0 no-repeat
+    background: url('http://s1.hdslb.com/bfs/static/jinkela/home/asserts/tab2233.png') 0 0 no-repeat; // p1.bqimg.com/567571/f0b9b188ab580a2b.png) 0 0 no-repeat
     position: absolute;
     left: -117px;
     top: 0px;

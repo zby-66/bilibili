@@ -71,7 +71,7 @@ export default {
     margin: 0 auto;
     margin-bottom: 20px;
     zoom: 1;
-    width: 980px;
+    width: 1140px;
 
     &:after {
       content: '';
@@ -97,7 +97,7 @@ export default {
   .container-row {
     margin: 0 auto;
     zoom: 1;
-    width: 980px;
+    width: 1140px;
 
     &:after {
       content: '';

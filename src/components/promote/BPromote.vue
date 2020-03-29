@@ -15,7 +15,7 @@
 			<div class="b-body" v-if="promotelist">
 				<ul class="rm-list">
 					<div>
-						<BPromoteItem v-for="item in promotelist" :promoteItem="item" :key="item.title"></BPromoteItem>
+						<BPromoteItem v-for="item in promotelist" :promoteItem="item" :key="item.name"></BPromoteItem>
 					</div>
 				</ul>
 			</div>
@@ -118,7 +118,7 @@ export default {
 							line-height 16px
 							color #6d757a
 			.b-body
-				margin-right -20px
+				margin-right -240px
 				clear both
 				.rm-list
 					padding-top 10px

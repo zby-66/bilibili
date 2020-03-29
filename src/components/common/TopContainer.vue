@@ -227,7 +227,7 @@ export default {
             }
 
             &.home {
-              margin-left: -10px;
+              margin-left: -80px;
               background-image: url('../../assets/images/icons.png');
               background-repeat: no-repeat;
               background-position: -845px -74px;
@@ -240,6 +240,7 @@ export default {
             }
 
             &.hbili {
+              margin-left: -10px;
               position: relative;
             }
 

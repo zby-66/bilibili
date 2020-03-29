@@ -28,7 +28,7 @@
 			</div>
 			<div class="b-body">
 				<ul class="v-list-live" v-if="recommend">
-					<li v-for="item in recommend" :key="item">
+					<li v-for="item in recommend" :key="item.title">
 						<BLiveItem :live="item"></BLiveItem>
 					</li>
 				</ul>
@@ -180,7 +180,7 @@ export default {
 							font-style normal
 							font-weight normal
 			.b-body
-				margin-right -20px
+				margin-right -240px
 				&:after
 					content ''
 					display block
@@ -194,7 +194,7 @@ export default {
 					overflow hidden
 					li
 						float left
-						margin 0 20px 20px 0
+						margin 0 15px 20px 0
 						height 148px
 						overflow hidden
 		.b-r
